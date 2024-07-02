@@ -16,6 +16,10 @@ module.exports = {
         primary: "#64FFDA",
         secondary: "#CCD6F6",
       },
+      cursor: {
+        fancy: "url(../img/cursor/c32.png),auto",
+        fancyLink: "url(../img/cursor/f32.png),auto",
+      },
     },
   },
   plugins: [],

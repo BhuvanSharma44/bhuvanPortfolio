@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth cursor-fancy">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="img/favicon/android-icon-36x36.png"
+      type="image/png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,122 +21,153 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Document</title>
+
+    <title>Bhuvan</title>
     <!-- rgb(232, 232, 232) -->
   </head>
-  <body>
+  <body class="cursor-fancy">
     <!-- Global Container -->
     <div class="bg-[#0A192F] w-full min-h-screen">
       <!-- navigation desktop and mobile #0A192F-->
 
-      <header class="md:min-h-24">
+      <header id="top" class="md:min-h-24">
         <!-- desktop -->
-        <nav
-          class="hidden md:flex md:items-center md:justify-between px-14 min-h-32"
-        >
-          <!-- Logo -->
-          <div class="" data-aos="fade" data-aos-duration="1000">
-            <a href="#">
-              <svg
-                id="logo"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                width="54"
-                height="54"
-                viewBox="0 0 84 96"
-              >
-                <g transform="translate(-8.000000, -2.000000)">
-                  <g transform="translate(11.000000, 5.000000)">
-                    <polygon
-                      id="Shape"
-                      stroke="#64FFDA"
-                      stroke-width="5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      points="39 0 0 22 0 67 39 90 78 68 78 23"
-                    ></polygon>
-                    <path
-                      stroke="#64FFDA"
-                      d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z"
-                      fill="#64FFDA"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-            </a>
-          </div>
-
-          <div
-            class="flex items-center justify-center xl:space-x-16 lg:space-x-10 md:space-x-6"
+        <div class="navigation">
+          <nav
+            class="hidden md:flex md:items-center md:justify-between px-14 min-h-32 transition-all duration-200 ease-in-out"
           >
-            <!-- 01 -->
-            <div class="font-mono">
+            <!-- Logo -->
+            <div class="" data-aos="fade">
               <a href="#">
-                <p class="text-primary font-mono">
-                  01.
-                  <span
-                    class="inline-block text-white hover:text-primary duration-200"
-                    >About</span
-                  >
-                </p>
+                <svg
+                  id="logo"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  width="54"
+                  height="54"
+                  viewBox="0 0 84 96"
+                >
+                  <g transform="translate(-8.000000, -2.000000)">
+                    <g transform="translate(11.000000, 5.000000)">
+                      <polygon
+                        id="Shape"
+                        stroke="#64FFDA"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        points="39 0 0 22 0 67 39 90 78 68 78 23"
+                      ></polygon>
+                      <path
+                        stroke="#64FFDA"
+                        d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z"
+                        fill="#64FFDA"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
               </a>
             </div>
 
-            <!-- 02 -->
-            <div class="font-mono">
-              <a href="#">
-                <p class="text-primary font-mono">
-                  02.
-                  <span
-                    class="inline-block text-white hover:text-primary duration-200"
-                    >Skills</span
-                  >
-                </p>
-              </a>
-            </div>
+            <div
+              class="flex items-center justify-center xl:space-x-16 lg:space-x-10 md:space-x-6"
+            >
+              <!-- 01 -->
+              <div class="font-mono">
+                <a href="#about">
+                  <p class="text-primary font-mono">
+                    <span
+                      class="inline-block"
+                      data-aos="fade"
+                      data-aos-duration="1000"
+                    >
+                      01.
+                    </span>
+                    <span
+                      class="inline-block text-white hover:text-primary duration-200"
+                      data-aos="fade-down"
+                      >About</span
+                    >
+                  </p>
+                </a>
+              </div>
 
-            <!-- 03 -->
-            <div class="font-mono">
-              <a href="#">
-                <p class="text-primary font-mono">
-                  03.
-                  <span
-                    class="inline-block text-white hover:text-primary duration-200"
-                    >Projects</span
-                  >
-                </p>
-              </a>
-            </div>
+              <!-- 02 -->
+              <div class="font-mono">
+                <a href="#skills">
+                  <p class="text-primary font-mono">
+                    <span
+                      class="inline-block"
+                      data-aos="fade"
+                      data-aos-duration="1000"
+                    >
+                      02.
+                    </span>
+                    <span
+                      class="inline-block text-white hover:text-primary duration-200"
+                      data-aos="fade-down"
+                      >Skills</span
+                    >
+                  </p>
+                </a>
+              </div>
 
-            <!-- Contact -->
-            <div class="font-mono">
-              <a href="#">
-                <p class="text-primary font-mono">
-                  04.
-                  <span
-                    class="inline-block text-white hover:text-primary duration-200"
-                    >Contact</span
-                  >
-                </p>
-              </a>
+              <!-- 03 -->
+              <div class="font-mono">
+                <a href="#projects">
+                  <p class="text-primary font-mono">
+                    <span
+                      class="inline-block"
+                      data-aos="fade"
+                      data-aos-duration="1000"
+                    >
+                      03.
+                    </span>
+                    <span
+                      class="inline-block text-white hover:text-primary duration-200"
+                      data-aos="fade-down"
+                      >Projects</span
+                    >
+                  </p>
+                </a>
+              </div>
+
+              <!-- Contact -->
+              <div class="font-mono">
+                <a href="#contact">
+                  <p class="text-primary font-mono">
+                    <span
+                      class="inline-block"
+                      data-aos="fade"
+                      data-aos-duration="1000"
+                    >
+                      04.
+                    </span>
+                    <span
+                      class="inline-block text-white hover:text-primary duration-200"
+                      data-aos="fade-down"
+                      >Contact</span
+                    >
+                  </p>
+                </a>
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
 
         <div
           id="menue"
           class="md:hidden absolute top-0 bottom-0 right-0 hidden flex-col items-center justify-evenly w-full min-h-screen py-44 pt-40 space-y-5 text-lg text-white uppercase bg-[#0A192F] z-30"
         >
-          <a href="#" class=""
+          <a href="#about" class="" data-aos="fade-down"
             ><span class="inline-block text-primary px-2">01.</span>About</a
           >
-          <a href="#" class=""
+          <a href="#skills" class="" data-aos="fade-down"
             ><span class="inline-block text-primary px-2">02.</span>Skills</a
           >
-          <a href="#" class=""
+          <a href="#projects" class="" data-aos="fade-down"
             ><span class="inline-block text-primary px-2">03.</span>Projects</a
           >
-          <a href="#" class=""
+          <a href="#contact" class="" data-aos="fade-down"
             ><span class="inline-block text-primary px-2">04.</span>Contact</a
           >
         </div>
@@ -190,19 +226,31 @@
         <div class="relative md:space-y-2">
           <ul class="thing space-y-4">
             <li>
-              <i
-                class="fa-brands fa-github text-2xl hover:-translate-y-1 duration-300 hover:text-primary"
-              ></i>
+              <a href="https://github.com/BhuvanSharma44" target="_blank">
+                <i
+                  class="fa-brands fa-github text-2xl hover:-translate-y-1 duration-300 hover:text-primary"
+                ></i>
+              </a>
             </li>
             <li>
-              <i
-                class="fa-brands fa-instagram text-2xl hover:-translate-y-1 duration-300 hover:text-primary"
-              ></i>
+              <a
+                href="https://www.instagram.com/bhuvan.01/?hl=en"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-instagram text-2xl hover:-translate-y-1 duration-300 hover:text-primary"
+                ></i>
+              </a>
             </li>
             <li>
-              <i
-                class="fa-brands fa-linkedin-in text-2xl hover:-translate-y-1 duration-300 hover:text-primary"
-              ></i>
+              <a
+                href="https://www.linkedin.com/in/bhuvan-sharma-113a07274"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-linkedin-in text-2xl hover:-translate-y-1 duration-300 hover:text-primary"
+                ></i>
+              </a>
             </li>
           </ul>
           <!-- <hr class="border-none bg-black h-80 w-1/5 ml-1" /> -->
@@ -217,6 +265,9 @@
           <a
             href="mailto:bhuvansharma292@gmail.com"
             class="then flex mx-auto font-mono text-secondary/60 hover:-translate-y-2 duration-300 hover:text-primary"
+            data-aos="fade"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"
             >bhuvansharma292@gmail.com</a
           >
           <div class="thing"></div>
@@ -257,11 +308,18 @@
                   developer, combining creativity with technical expertise in
                   every project.
                 </p>
-                <button
-                  class="relative text-primary font-mono border-2 border-primary/60 px-6 py-4 rounded-md mt-5 hover:-translate-y-2 duration-300 active:translate-y-1 active:bg-primary/50 active:text-white"
+                <div
+                  class=""
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
                 >
-                  Check out my cv!
-                </button>
+                  <button
+                    class="relative text-primary font-mono border-2 border-primary/60 px-6 py-4 rounded-md mt-5 hover:-translate-y-2 duration-300 active:translate-y-1 active:bg-primary/50 active:text-white"
+                  >
+                    Check out my cv!
+                  </button>
+                </div>
               </div>
             </div>
           </section>
@@ -272,13 +330,13 @@
               <div class="flex items-center">
                 <div class="flex items-center w-full">
                   <h2 class="head" data-before="01.">About Me</h2>
-                  <div class="happen md:hidden lg:block"></div>
+                  <div class="happen lg:w-80 hidden lg:block"></div>
                 </div>
               </div>
 
               <!-- content -->
               <div
-                class="flex flex-col mt-8 md:mt-0 md:items-center md:justify-around lg:flex-row"
+                class="flex flex-col mt-8 md:mt-5 md:items-center md:justify-around lg:flex-row"
               >
                 <!-- text -->
                 <div class="lg:w-1/2">
@@ -454,14 +512,16 @@
                   <h2 class="head font-primarysemiBold" data-before="02.">
                     I Know
                   </h2>
-                  <div class="happen"></div>
+                  <div class="happen lg:w-80 hidden lg:block"></div>
                 </div>
               </div>
 
               <!-- content -->
               <div class="">
                 <!-- box container -->
-                <div class="md:grid lg:grid-cols-2 gap-4">
+                <div
+                  class="md:grid lg:grid-cols-2 gap-4 md:mt-5 space-y-10 md:space-y-0"
+                >
                   <!-- first -->
                   <div>
                     <!-- icon container-->
@@ -482,7 +542,7 @@
                       >
                         I have a strong proficiency in HTML5, specializing in:
                         <ul
-                          class="list-disc text-secondary/60 text-left mt-3 md:px-5"
+                          class="list-disc text-secondary/60 text-left mt-3 md:px-5 md:text-base"
                         >
                           <li>
                             Creating clean, semantic markup for effective
@@ -525,7 +585,7 @@
                       >
                         I am skilled in CSS3, proficient in:
                         <ul
-                          class="list-disc text-secondary/60 text-left mt-3 md:px-5"
+                          class="list-disc text-secondary/60 text-left mt-3 md:px-5 md:text-base"
                         >
                           <li>
                             Designing responsive layouts that adapt to various
@@ -568,7 +628,7 @@
                       >
                         I am proficient in Tailwind CSS, specializing in:
                         <ul
-                          class="list-disc text-secondary/60 text-left mt-3 mx-5"
+                          class="list-disc text-secondary/60 text-left mt-3 mx-5 md:text-base"
                         >
                           <li>
                             Rapidly building custom, responsive UI components
@@ -610,7 +670,7 @@
                         Building a strong foundation in basic concepts and
                         advancing towards more complex skills including:
                         <ul
-                          class="list-disc text-secondary/60 text-left mt-3 md:px-5"
+                          class="list-disc text-secondary/60 text-left mt-3 md:px-5 md:text-base"
                         >
                           <li>
                             Writing clean and efficient code to implement
@@ -649,7 +709,7 @@
                   >
                     Some Thing I've Built
                   </h2>
-                  <div class="happen lg:w-80 md:hidden"></div>
+                  <div class="happen lg:w-80 hidden lg:block"></div>
                 </div>
               </div>
 
@@ -800,7 +860,7 @@
                   </div>
                   <div class="flex items-center justify-between px-2">
                     <div>
-                      <a href="">
+                      <a href="https://pinui.netlify.app/" target="_blank">
                         <i class="ri-share-box-fill text-xl text-secondary"></i>
                       </a>
                     </div>
@@ -834,7 +894,7 @@
                 <div
                   class="md:1/5 relative group overflow-hidden md:mt-5 lg:mt-0"
                 >
-                  <a href="#">
+                  <a href="https://pinui.netlify.app/">
                     <img
                       src="img/New folder/img2.png"
                       alt=""
@@ -891,7 +951,7 @@
                 <!-- image -->
                 <div class="">
                   <div class="md:1/5 relative group w-full">
-                    <a href="#">
+                    <a href="https://clipboardtailwindps.netlify.app/">
                       <img
                         src="img/New folder/img3.png"
                         alt=""
@@ -951,7 +1011,10 @@
                         </li>
                       </ul>
                       <div class="">
-                        <a href="">
+                        <a
+                          href="https://clipboardtailwindps.netlify.app/"
+                          target="_blank"
+                        >
                           <i
                             class="ri-share-box-fill text-xl text-secondary"
                           ></i>
@@ -1002,93 +1065,100 @@
               </div>
               <!-- fourth -->
               <div class="flex flex-col lg:flex-row mt-36">
-                <div
-                  class="hidden md:block md:1/5 text-left text-sm space-y-2 group"
-                >
-                  <!-- top heading -->
-                  <p
-                    class="text-primary font-mono group-hover:text-secondary duration-300"
-                  >
-                    Project-4
-                  </p>
-                  <p
-                    class="text-secondary font-primaryMedium text-3xl group-hover:text-primary duration-300"
-                  >
-                    LoopStudio
-                  </p>
-
+                <!-- for desktop -->
+                <div class="w-full h-full">
                   <div
-                    class="left-0 text-secondary bg-[#112240] rounded-lg px-3 py-2"
+                    class="hidden md:block md:1/5 text-left text-sm space-y-2 group md:mt-5 mg:mt-0"
                   >
-                    I designed a new landing page using HTML, CSS, Tailwind CSS,
-                    and JavaScript to showcase advanced front-end skills. This
-                    project emphasized creating a responsive navigation bar with
-                    JavaScript, enhancing usability through DOM manipulation.
-                    Mastering JavaScript for dynamic web elements was a pivotal
-                    learning experience, setting the stage for future projects
-                    aimed at improving user interaction and functionality.
-                  </div>
-                  <div class="flex items-center justify-between px-2">
-                    <div>
-                      <a href="">
-                        <i class="ri-share-box-fill text-xl text-secondary"></i>
-                      </a>
-                    </div>
+                    <!-- top heading -->
+                    <p
+                      class="text-primary font-mono group-hover:text-secondary duration-300"
+                    >
+                      Project-4
+                    </p>
+                    <p
+                      class="text-secondary font-primaryMedium text-3xl group-hover:text-primary duration-300"
+                    >
+                      Clipboard
+                    </p>
 
-                    <ul class="flex items-center space-x-2 font-mono mt-3">
-                      <li
-                        class="px-5 py-1 border-2 border-secondary/40 text-secondary rounded-lg"
-                      >
-                        HTML
-                      </li>
-                      <li
-                        class="px-5 py-1 border-2 border-secondary/40 text-secondary rounded-lg"
-                      >
-                        CSS
-                      </li>
-                      <li
-                        class="px-5 py-1 border-2 border-secondary/40 text-secondary rounded-lg"
-                      >
-                        TalilwindCss
-                      </li>
-                      <li
-                        class="px-5 py-1 border-2 border-secondary/40 text-secondary rounded-lg"
-                      >
-                        Js
-                      </li>
-                    </ul>
+                    <div
+                      class="text-secondary bg-[#112240] rounded-lg px-3 py-2 text-sm"
+                    >
+                      I designed a minimalist landing page using HTML, CSS, and
+                      Tailwind CSS to showcase my front-end development skills.
+                      It taught me efficient use of Tailwind CSS's utility
+                      classes for styling and achieving responsive design across
+                      devices. The main challenge was mastering Tailwind CSS's
+                      extensive class library to optimize styles. Moving
+                      forward, I aim to explore advanced Tailwind CSS features
+                      to elevate future user interface designs.
+                    </div>
+                    <div class="flex items-center justify-between px-2">
+                      <ul class="flex items-center space-x-2 font-mono mt-3">
+                        <li
+                          class="px-5 py-1 border-2 border-secondary/40 text-secondary rounded-lg"
+                        >
+                          HTML
+                        </li>
+                        <li
+                          class="px-5 py-1 border-2 border-secondary/40 text-secondary rounded-lg"
+                        >
+                          CSS
+                        </li>
+                        <li
+                          class="px-5 py-1 border-2 border-secondary/40 text-secondary rounded-lg"
+                        >
+                          TalilwindCss
+                        </li>
+                        <li
+                          class="px-5 py-1 border-2 border-secondary/40 text-secondary rounded-lg"
+                        >
+                          Js
+                        </li>
+                      </ul>
+                      <div class="">
+                        <a href="https://bhloop.netlify.app/" target="_blank">
+                          <i
+                            class="ri-share-box-fill text-xl text-secondary"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <!-- image -->
-                <div
-                  class="md:1/5 relative group overflow-hidden md:mt-5 lg:mt-0"
-                >
-                  <a href="#">
-                    <img
-                      src="img/New folder/img4.png"
-                      alt=""
-                      class="rounded-lg" />
+                <div class="">
+                  <div class="md:1/5 relative group w-full">
+                    <a href="https://bhloop.netlify.app/">
+                      <img
+                        src="img/New folder/img4.png"
+                        alt=""
+                        class="rounded-lg" />
 
-                    <div
-                      class="hidden md:block absolute top-0 bg-primary/40 left-0 w-full h-full rounded-lg group-hover:bg-transparent duration-300"
-                    ></div
-                  ></a>
+                      <div
+                        class="hidden md:block absolute top-0 bg-primary/40 left-0 w-full h-full rounded-lg group-hover:bg-transparent duration-300"
+                      ></div
+                    ></a>
+                  </div>
                 </div>
 
+                <!-- for mobile -->
                 <div class="md:hidden mt-5">
-                  <p class="font-mono text-primary text-sm">Project-4</p>
+                  <p class="font-mono text-primary text-sm">Project-3</p>
                   <p class="font-primaryMedium text-secondary/60 text-2xl">
-                    LoopStudio
+                    Clipboard
                   </p>
                   <p class="font-primaryRegular text-secondary/40">
-                    I designed a new landing page using HTML, CSS, Tailwind CSS,
-                    and JavaScript to showcase advanced front-end skills. This
-                    project emphasized creating a responsive navigation bar with
-                    JavaScript, enhancing usability through DOM manipulation.
-                    Mastering JavaScript for dynamic web elements was a pivotal
-                    learning experience, setting the stage for future projects
-                    aimed at improving user interaction and functionality.
+                    I designed a minimalist landing page using HTML, CSS, and
+                    Tailwind CSS to showcase my front-end development skills. It
+                    taught me efficient use of Tailwind CSS's utility classes
+                    for styling and achieving responsive design across devices.
+                    The main challenge was mastering Tailwind CSS's extensive
+                    class library to optimize styles. Moving forward, I aim to
+                    explore advanced Tailwind CSS features to elevate future
+                    user interface designs.
                   </p>
                   <div
                     class="flex items-center justify-between text-secondary/40 mt-5"
@@ -1109,11 +1179,6 @@
                       >
                         TalilwindCss
                       </li>
-                      <li
-                        class="border-2 border-secondary/50 rounded-md px-4 py-2"
-                      >
-                        Js
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -1121,7 +1186,7 @@
             </div>
           </section>
 
-          <footer id="contact" class="min-h-screen md:mt-96 pt-28">
+          <footer id="contact" class="min-h-screen md:mt-96 pt-28 relative">
             <div class="px-10 md:px-5">
               <div class="flex w-full items-center justify-center">
                 <p
@@ -1148,6 +1213,15 @@
                 >
                   <a href="mailto:bhuvansharama292@gmail.com">Say Hello</a>
                 </button>
+                <a href="#top">
+                  <button
+                    data-aos="fade-up"
+                    class="relative text-primary font-mono border-2 border-primary/60 px-6 py-4 rounded-md mt-10 hover:-translate-y-2 duration-300 active:translate-y-1 active:bg-primary/50 active:text-white md:block hidden md:absolute right-10 bottom-28"
+                  >
+                    <i class="ri-arrow-up-line"></i>
+                  </button>
+                </a>
+
                 <div class="bg-white min-h-96 md:hidden">
                   <ul
                     class="flex items-end justify-center space-x-3 bg-purple-200 w-full min-h-96"
