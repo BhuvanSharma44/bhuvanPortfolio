@@ -5,6 +5,10 @@ const hideMenueTwo = document.querySelector(".outTwo");
 const hideMenueThree = document.querySelector(".outThree");
 const hideMenueFour = document.querySelector(".outFour");
 
+let openLinkInNewTab = () => {
+  window.open("./resume/cv.pdf");
+};
+
 btn.addEventListener("click", navToggle);
 function navToggle() {
   btn.classList.toggle("open");
